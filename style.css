@@ -23,7 +23,7 @@ body {
   background-color: #fff;
   max-width: 90%;
   width: 460px;
-  height: 680px;
+  height: auto;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -33,7 +33,7 @@ body {
 
 .card-btm {
   width: 100%;
-  padding: 35px 55px 20px 55px;
+  padding: 35px 50px 20px 50px;
 }
 
 .banner-img {
@@ -41,7 +41,7 @@ body {
   border-radius: 10px 10px 0 0;
 }
 
-.card-btm h1 {
+.card-btm h2 {
   padding-bottom: 20px;
   text-align: center;
 }
@@ -58,17 +58,23 @@ body {
   background-color: hsl(225, 100%, 98%);
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 15px;
   margin-bottom: 30px;
   border-radius: 10px;
 }
 
-.plan-tile span {
-  margin-right: -95px;
+.plan-items {
+  display: flex;
+  list-style-type: none;
 }
 
-.plan-description li {
+.plan-items img {
+  margin-right: 10px;
+}
+
+.plan-description {
   list-style-type: none;
+  margin-right: 30px;
 }
 
 .plan-description li:first-child {
@@ -105,4 +111,20 @@ button:hover {
   background-color: white;
   color: rgb(150, 150, 150);
   font-weight: 900;
+}
+
+/* ---------------------------------------------- */
+/* QUERIES */
+/* ---------------------------------------------- */
+
+@media only screen and (max-width: 395px) {
+  .card-btm {
+    padding: 35px 40px 20px 40px;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .card-btm {
+    padding: 35px 20px 20px 20px;
+  }
 }
